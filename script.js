@@ -13,7 +13,7 @@ $(document).ready(function() {
 	};
 
 	var status_text = {
-		'operational': 'operational',
+		'operational': 'ทำงานปกติ',
 		'investigating': 'investigating',
 		'major outage': 'outage',
 		'degraded performance': 'degraded',
