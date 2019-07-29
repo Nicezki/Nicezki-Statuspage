@@ -13,10 +13,10 @@ $(document).ready(function() {
 	};
 
 	var status_text = {
-		'operational': 'operational',
-		'investigating': 'investigating',
-		'major outage': 'outage',
-		'degraded performance': 'degraded',
+		'operational': 'ทำงานปกติ',
+		'investigating': 'กำลังตรวจสอบปัญหา',
+		'major outage': 'ขัดข้อง',
+		'degraded performance': 'ไม่มีประสิทธิภาพ',
 	};
 
 	var monitors = config.uptimerobot.api_keys;
