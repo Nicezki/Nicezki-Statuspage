@@ -8,7 +8,7 @@ $(document).ready(function() {
 		},
 		github: {
 			org: 'Nicezki',
-			repo: 'Nicezki-Statuspage'
+			repo: 'nzkisp'
 		}
 	};
 
