@@ -13,7 +13,7 @@ $(document).ready(function() {
 	};
 
 	var status_text = {
-		'operational': 'ทำงานปกติ',
+		'operational': 'operational',
 		'investigating': 'investigating',
 		'major outage': 'outage',
 		'degraded performance': 'degraded',
@@ -51,7 +51,7 @@ $(document).ready(function() {
 		
 		if (!$('#panel').data('incident')) {
 			$('#panel').attr('class', (status === 'operational' ? 'panel-success' : 'panel-warning') );
-			$('#paneltitle').html(status === 'operational' ? 'All systems are operational.' : 'One or more systems inoperative');
+			$('#paneltitle').html(status === 'operational' ? 'เยี่ยม! ระบบทั้งหมดใช้งานได้ตามปกติ' : 'ไม่นะ! ระบบบางอย่างไม่ทำงานอย่างน้อยหนึ่งระบบ');
 		}
 		data.monitors.forEach(function(item) {
 			var name = item.friendly_name;
@@ -116,7 +116,7 @@ $(document).ready(function() {
 
 			if (issue.state === 'closed') {
 				html += '<p><em>Updated ' + datetime(issue.closed_at) + '<br/>';
-				html += 'The system is back in normal operation.</p>';
+				html += 'ระบบกลับมาทำงานตามปกติแล้ว</p>';
 			}
 			html += '</div>';
 			html += '</div>';
